@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Piano</title>
+
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="var(--desert-storm)" />
+
+    <!-- favicon -->
+    <link rel="icon" href="img/piano.png" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/piano.css" />
+  </head>
+  <body>
+    <header>
+      <div class="keys">
+        <div class="key" data-note="a"></div>
+        <div class="key sharp" data-note="w"></div>
+        <div class="key" data-note="s"></div>
+        <div class="key sharp" data-note="e"></div>
+        <div class="key" data-note="d"></div>
+        <div class="key" data-note="f"></div>
+        <div class="key sharp" data-note="t"></div>
+        <div class="key" data-note="g"></div>
+        <div class="key sharp" data-note="y"></div>
+        <div class="key" data-note="h"></div>
+        <div class="key sharp" data-note="u"></div>
+        <div class="key" data-note="j"></div>
+        <div class="key" data-note="k"></div>
+        <div class="key sharp" data-note="o"></div>
+        <div class="key" data-note="l"></div>
+        <div class="key sharp" data-note="p"></div>
+        <div class="key" data-note=";"></div>
+      </div>
+      <audio src="sounds/a.mp3" data-note="a" preload="auto"></audio>
+      <audio src="sounds/w.mp3" data-note="w" preload="auto"></audio>
+      <audio src="sounds/s.mp3" data-note="s" preload="auto"></audio>
+      <audio src="sounds/e.mp3" data-note="e" preload="auto"></audio>
+      <audio src="sounds/d.mp3" data-note="d" preload="auto"></audio>
+      <audio src="sounds/f.mp3" data-note="f" preload="auto"></audio>
+      <audio src="sounds/t.mp3" data-note="t" preload="auto"></audio>
+      <audio src="sounds/g.mp3" data-note="g" preload="auto"></audio>
+      <audio src="sounds/y.mp3" data-note="y" preload="auto"></audio>
+      <audio src="sounds/h.mp3" data-note="h" preload="auto"></audio>
+      <audio src="sounds/u.mp3" data-note="u" preload="auto"></audio>
+      <audio src="sounds/j.mp3" data-note="j" preload="auto"></audio>
+      <audio src="sounds/k.mp3" data-note="k" preload="auto"></audio>
+      <audio src="sounds/o.mp3" data-note="o" preload="auto"></audio>
+      <audio src="sounds/l.mp3" data-note="l" preload="auto"></audio>
+      <audio src="sounds/p.mp3" data-note="p" preload="auto"></audio>
+      <audio src="sounds/comma.mp3" data-note=";" preload="auto"></audio>
+    </header>
+    <main>
+      <h1 class="title">Piano keyboard</h1>
+      <p class="subtitle">You can use your keyboard or mouse to play.</p>
+    </main>
+    <footer>
+      <p class="footer-text">
+        Coded by
+        <a
+          href="https://github.com/isbendiyarovanezrin"
+          target="blank"
+          class="footer-link"
+        >
+          Nəzrin İsbəndiyarova.
+        </a>
+      </p>
+    </footer>
+
+    <!-- javascript -->
+    <script src="js/piano.js"></script>
+  </body>
+</html>

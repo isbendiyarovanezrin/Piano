@@ -1,0 +1,227 @@
+:root {
+  --bg-color: #e6e6e673;
+  --white: #ffffff;
+  --transparent-white: #ffffff66;
+  --desert-storm: #f8f8f8;
+  --soapstone: #fcfcfc;
+  --black: #000000;
+  --onyx: #111111;
+  --dark-jungle-green: #222222;
+  --ironside-grey: #666666;
+  --davy-grey: #555555;
+  --primary-shadow-color: #00000080;
+  --secondary-shadow-color: #000000b3;
+  --primary-transition: all 0.1s ease;
+  --secondary-transition: 0.3s ease;
+  --font-family: "Source Serif Pro", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  font-family: var(--font-family);
+  background-image: linear-gradient(
+    to left,
+    var(--bg-color),
+    var(--soapstone) 50%,
+    var(--bg-color)
+  );
+}
+
+.keys {
+  height: 79vh;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    -65deg,
+    var(--black),
+    var(--dark-jungle-green),
+    var(--black),
+    var(--ironside-grey),
+    var(--dark-jungle-green) 75%
+  );
+  box-shadow: 0.1rem 0.1rem 0.1rem var(--black);
+  padding: 0.9rem 0 6rem;
+  position: relative;
+}
+
+.key {
+  height: 100%;
+  width: 9rem;
+  cursor: grab;
+  position: relative;
+  border-radius: 0.1rem;
+  margin: 0 0.1rem;
+  background-image: linear-gradient(-30deg, var(--desert-storm), var(--white));
+  box-shadow: inset 0 0.2rem 0 var(--white), inset 0 -0.2rem 0 var(--white),
+    inset 0.2rem 0 0 var(--white), inset -0.2rem 0 0 var(--white),
+    0 0.5rem 0.4rem var(--secondary-shadow-color),
+    inset 0 -0.2rem 0 var(--white), inset 0.2rem 0 0 var(--white),
+    inset -0.2rem -0.2rem 1.6rem var(--primary-shadow-color),
+    -0.3rem 0.5rem 0.7rem var(--primary-shadow-color);
+}
+
+.key:active:not(.sharp),
+.playing {
+  transition: var(--primary-transition);
+  box-shadow: inset 0 0.2rem 0 var(--white), inset 0 -0.2rem 0 var(--white),
+    inset 0.2rem 0 0 var(--white), inset -0.2rem 0 0 var(--white),
+    0 0.4rem 0.4rem var(--secondary-shadow-color),
+    inset 0 -0.2rem 0 var(--white), inset 0.1rem 0 0 var(--white),
+    inset -0.2rem -0.2rem 1.6rem var(--black),
+    -0.4rem 0.5rem 0.7rem var(--primary-shadow-color);
+  height: 98.9%;
+  cursor: grabbing;
+}
+
+.sharp {
+  z-index: 10;
+  margin-top: -0.1rem !important;
+  position: absolute !important;
+  height: 45% !important;
+  width: 6rem;
+  background-image: linear-gradient(
+    -20deg,
+    var(--dark-jungle-green),
+    var(--black),
+    var(--dark-jungle-green)
+  ) !important;
+  box-shadow: inset 0 -0.1rem 0.2rem var(--transparent-white),
+    0 0.2rem 0.3rem var(--primary-shadow-color) !important;
+  border-style: solid;
+  border-color: var(--ironside-grey) var(--dark-jungle-green) var(--onyx)
+    var(--davy-grey);
+  border-width: 0.2rem 0.4rem 1.2rem;
+}
+
+.sharp[data-note="w"] {
+  margin-right: 74.5rem;
+}
+
+.sharp[data-note="e"] {
+  margin-right: 55.5rem;
+}
+
+.sharp[data-note="t"] {
+  margin-right: 18.5rem;
+}
+
+.sharp[data-note="u"] {
+  margin-left: 19rem;
+}
+
+.sharp[data-note="o"] {
+  margin-left: 55.5rem;
+}
+
+.sharp[data-note="p"] {
+  margin-left: 74.5rem;
+}
+
+.sharp:active,
+.playing {
+  transition: var(--primary-transition);
+  border-bottom-width: 0.4rem;
+  cursor: grabbing;
+}
+
+main {
+  margin: 1rem;
+}
+
+footer {
+  margin: 1.7rem 1rem 1rem;
+}
+
+.title,
+.subtitle,
+.footer-text {
+  text-align: center;
+  color: var(--onyx);
+}
+
+.title {
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.1rem;
+}
+
+.subtitle {
+  font-size: 1.9rem;
+  margin-top: 0.1rem;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--onyx);
+  font-weight: 600;
+}
+
+.footer-link:hover {
+  color: var(--ironside-grey);
+  transition: var(--secondary-transition);
+}
+
+::selection {
+  color: var(--soapstone);
+  background-color: var(--dark-jungle-green);
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 3px;
+  }
+}
