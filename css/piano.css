@@ -30,6 +30,10 @@ html {
 
 body {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   font-family: var(--font-family);
   background-image: linear-gradient(
     to left,
@@ -136,19 +140,16 @@ body {
   cursor: grabbing;
 }
 
-main {
-  margin: 1rem;
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--onyx);
 }
 
 footer {
-  margin: 1.7rem 1rem 1rem;
-}
-
-.title,
-.subtitle,
-.footer-text {
-  text-align: center;
-  color: var(--onyx);
+  margin-bottom: 1.1rem;
 }
 
 .title {
