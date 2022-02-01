@@ -1,6 +1,6 @@
 <div align="center">
 
-|               **[Piano Keyboard](https://youtu.be/sAcj8me7wGI)🎹**                |
+|             **[Piano Keyboard](https://youtu.be/sAcj8me7wGI?t=1)🎹**              |
 | :-------------------------------------------------------------------------------: |
 |                                                                                   |
 |                    You can use your keyboard or mouse to play.                    |
