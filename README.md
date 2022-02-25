@@ -12,7 +12,7 @@
 |                             ![Piano Keyboard](https://i.postimg.cc/Cx9dXd89/piano.png)                              |
 |                                                                                                                     |
 |                                                     License 📝                                                      |
-|          Copyright © 2022 [**Nəzrin İsbəndiyarova**](https://github.com/isbendiyarovanezrin "Click me!😎")          |
+|         Copyright © 2022 [**Nəzrin İsbəndiyarova.**](https://github.com/isbendiyarovanezrin "Click me!😎")          |
 | This project is [**MIT**](https://github.com/isbendiyarovanezrin/Piano/blob/master/LICENSE "Click me!🧐") licensed. |
 |                                                                                                                     |
 
