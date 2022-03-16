@@ -25,3 +25,14 @@ keys.forEach((key) => key.addEventListener("transitionend", removeStyle));
 function removeStyle() {
   this.classList.remove("playing");
 }
+
+// loader
+$(window).on("load", () => {
+  setTimeout(removeLoader, 1600);
+});
+
+function removeLoader() {
+  $("#loadingDiv").fadeOut(500, () => {
+    $("#loadingDiv").remove();
+  });
+}
